@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/text.css" />
     <link rel="stylesheet" href="css/960.css" />
+    <link href="my.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
