@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Day 3</title>
+<script type="text/javascript">
+	function a()
+	{
+		alert("you are in a");
+		return true;
+	}
+	function b()
+	{
+		alert("you are in B");
+		return false;
+	}
+	function validateme()
+	{
+	
+/*	
+		var a = 0; 
+		var b = -1;
+		var c = 2;
+		
+		if ((b/c)>0 && b/a<1)
+		{
+			alert("here");
+		}
+	*/
+		if(a() && b())
+		{
+			alert("here");
+		}
+		if (document.thisForm.txtName.value.length === 0)
+		{
+			alert('You must enter a name~!');
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+		
+		
+	
+	}
+
+</script>
+</head>
+<body>
+<form name="thisForm" action="" method="get" onsubmit="return validateme()">
+	Name: <input type="text" name="txtName" /> <br />
+	favorite color: <br />
+	
+	red - <input type="radio" name="rdoColor" value="red" /><br />
+		blue - <input type="radio" name="rdoColor" value="blue" checked /><br />
+	
+	Do you like pets if so, which kind? <br />
+	Cats: <input type="checkbox" value="cats" name="chkPets" />
+	Dogs: <input type="checkbox" value="dogs" name="chkPets" />
+	Lizards: <input type="checkbox" value="lizards" name="chkPets" />
+	Snake: <input type="checkbox" value="snakes" name="chkPets" />
+	Birds: <input type="checkbox" value="birds" name="chkPets" />
+	Rodents: <input type="checkbox" value="rodents" name="chkPets" />
+	<br />
+	<br />
+	State: <br />
+	<select name="cboState">
+		<option value="" selected></option>
+		<option value="AZ">Arizona</option>
+		<option value="CA"> California</option>
+	</select>
+	<br />
+	<input type="submit" name="cmdSubmit" value="Click me!" />
+	</form>
+</body>
+
+
+
+
+
+
+</html>
