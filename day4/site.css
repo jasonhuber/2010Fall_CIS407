@@ -1,0 +1,9 @@
+﻿.classhead
+{
+    color:Blue;
+    font-size:20pt; 
+    text-align:center;
+    border-radius: 15px;
+    background-color:Black;
+    -moz-border-radius: 15px;
+}

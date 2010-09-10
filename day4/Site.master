@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<link rel="stylesheet" href="reset.css" />
+<link rel="stylesheet" href="text.css" />
+<link rel="stylesheet" href="960.css" />
+<link href="site.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container_12">
+        <div class="grid_12 classhead">
+            Jason Huber's CIS407 Website!
+        </div>
+        <div class="clear"></div>
+        <div class="grid_4 leftside">
+            <a href="http://www.youtube.com/jasncab">myyoutube</a><br />
+            <a href="http://www.jasncab.com">jasncab.com</a>
+        </div>
+        <div class="grid_8">
+            <asp:ContentPlaceHolder id="contentbodyplaceholder" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+        <div class="grid_12 classfooter">
+        copyright 2010 Jason Huber
+        </div>        
+    </div>
+    </form>
+</body>
+</html>
