@@ -1,0 +1,5 @@
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day5\DBConsole\DBConsole\bin\Debug\DBConsole.exe
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day5\DBConsole\DBConsole\bin\Debug\DBConsole.pdb
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day5\DBConsole\DBConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day5\DBConsole\DBConsole\obj\x86\Debug\DBConsole.exe
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day5\DBConsole\DBConsole\obj\x86\Debug\DBConsole.pdb
