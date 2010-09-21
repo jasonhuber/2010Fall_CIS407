@@ -1,0 +1,10 @@
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day6\dbreader\dbreader\bin\dbreader.dll
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day6\dbreader\dbreader\bin\dbreader.pdb
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day6\dbreader\dbreader\obj\Debug\ResolveAssemblyReference.cache
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day6\dbreader\dbreader\obj\Debug\dbreader.dll
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day6\dbreader\dbreader\obj\Debug\dbreader.pdb
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day7\dbreader\dbreader\bin\dbreader.dll
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day7\dbreader\dbreader\bin\dbreader.pdb
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day7\dbreader\dbreader\obj\Debug\ResolveAssemblyReference.cache
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day7\dbreader\dbreader\obj\Debug\dbreader.dll
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day7\dbreader\dbreader\obj\Debug\dbreader.pdb
