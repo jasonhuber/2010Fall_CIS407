@@ -3,7 +3,9 @@
 <html>
 <head runat="server">
     <title>Devry Mobile CIS 407</title>
-    <script src="reui.js" type="text/javascript"></script>
+    <script  type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="reui.js"></script>   
+    <script type="text/javascript" src="rml.js"></script>  
     <link rel="stylesheet" type="text/css" href="themes/iui/iui.css" />
     <link rel="stylesheet" type="text/css" href="themes/iui/default/default-theme.css" />
      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -35,7 +37,59 @@
     	-webkit-transition-property: none;
     }
     </style>
+       <script type="text/javascript">
+            function LoadProducts(xSupplier, xCategory) {
+            var lis = "";
+            var divs = "";
+            var url = "products.aspx?"
+            if (xSupplier.length > 0) {
+                url += "supplier=" + xSupplier; 
+            }
+            if (xCategory.length > 0) {
+                url += "category=" + xCategory;
+            }
 
+            $.getJSON(url,
+             function (data) {
+                 $.each(data.products, function (key, value) {
+                    
+                     //need to get some rml in here to load up my LIs...
+                     lis += RML.li({ content: RML.a({ href: "#prod" + value.id, content: value.Description, _class: "prodahref" }) });
+                     divs += RML.div({ id: "prod" + value.id, title: value.Description, content: "Loading..." });
+                 });
+                 $("#products").html(lis);
+                 $('body').append(divs);
+                 $(".prodahref").each(function (key) {
+                     $(this).bind("click", function () {
+                         LoadProduct(this.text);
+                     }
+                     );
+                 });
+             });
+         }
+         function LoadProduct(xProductId) {
+             var lis = "";
+             var divs = "";
+             var url = "product.aspx?productid=" + xProductId;
+
+//             $.getJSON(url,
+//             function (data) {
+//                 $.each(data.products, function (key, value) {
+//                     //need to get some rml in here to load up my LIs...
+//                     lis += RML.li({ content: RML.a({ href: "#prod" + value.product, content: value.product, _class: "prodahref" }) });
+//                     divs += RML.div({ id: "#prod" + value.product, title: value.product, content: "Loading..." });
+//                 });
+//                 $("#products").html(lis);
+//                 //                 $('body').append(uls);
+//                 $(".prodahref").each(function (key) {
+//                     $(this).bind("click", function () {
+//                         LoadProduct(this.text);
+//                     }
+//                     );
+//                 });
+//             });
+      }
+       </script>
 </head>
 <body>
 
@@ -51,16 +105,20 @@
     <ul id="category" title="Category">
     <asp:Repeater ID="rptCategory" runat="server">
         <ItemTemplate>
-            <li><a href="#cat<%# DataBinder.Eval(Container.DataItem,"CategoryID") %>"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></li>
+            <li><a href="#products" onclick="LoadProducts('','<%# DataBinder.Eval(Container.DataItem, "CategoryId")%>')"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></li>
         </ItemTemplate>
     </asp:Repeater>
     </ul>
     <ul id="supplier" title="Supplier">
     <asp:Repeater ID="rptSupplier" runat="server">
         <ItemTemplate>
-            <li><a href="#cat<%# DataBinder.Eval(Container.DataItem,"supplierID") %>"><%# DataBinder.Eval(Container.DataItem, "CompanyName")%></a></li>
+            <li><a href="#products"><%# DataBinder.Eval(Container.DataItem, "CompanyName")%></a></li>
         </ItemTemplate>
     </asp:Repeater>
+    </ul>
+
+    <ul  id="products" title="Products">
+        <li>Please wait. Loading...</li>
     </ul>
    
 

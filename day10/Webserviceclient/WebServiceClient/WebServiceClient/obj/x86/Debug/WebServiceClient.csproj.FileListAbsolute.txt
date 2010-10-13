@@ -1,0 +1,10 @@
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\WebServiceClient.Form1.resources
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\WebServiceClient.Properties.Resources.resources
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\ResGen.read.1.tlog
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\ResGen.write.1.tlog
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\bin\Debug\WebServiceClient.exe.config
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\bin\Debug\WebServiceClient.exe
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\bin\Debug\WebServiceClient.pdb
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\WebServiceClient.exe
+E:\DropBox\My Dropbox\Devry\CIS407\SU10B\day10\Webserviceclient\WebServiceClient\WebServiceClient\obj\x86\Debug\WebServiceClient.pdb
