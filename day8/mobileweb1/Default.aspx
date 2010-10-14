@@ -52,42 +52,38 @@
             $.getJSON(url,
              function (data) {
                  $.each(data.products, function (key, value) {
-                    
+
                      //need to get some rml in here to load up my LIs...
                      lis += RML.li({ content: RML.a({ href: "#prod" + value.id, content: value.Description, _class: "prodahref" }) });
                      divs += RML.div({ id: "prod" + value.id, title: value.Description, content: "Loading..." });
                  });
                  $("#products").html(lis);
                  $('body').append(divs);
+
                  $(".prodahref").each(function (key) {
+
                      $(this).bind("click", function () {
-                         LoadProduct(this.text);
+                         
+                         LoadProduct(this.href.substr(this.href.indexOf("#prod", 0) + 5,
+                            this.href.length - (this.href.indexOf("#prod", 0) + 5)));
+
                      }
                      );
                  });
              });
-         }
+       }
+       
+             
          function LoadProduct(xProductId) {
+             debugger;
              var lis = "";
              var divs = "";
              var url = "product.aspx?productid=" + xProductId;
-
-//             $.getJSON(url,
-//             function (data) {
-//                 $.each(data.products, function (key, value) {
-//                     //need to get some rml in here to load up my LIs...
-//                     lis += RML.li({ content: RML.a({ href: "#prod" + value.product, content: value.product, _class: "prodahref" }) });
-//                     divs += RML.div({ id: "#prod" + value.product, title: value.product, content: "Loading..." });
-//                 });
-//                 $("#products").html(lis);
-//                 //                 $('body').append(uls);
-//                 $(".prodahref").each(function (key) {
-//                     $(this).bind("click", function () {
-//                         LoadProduct(this.text);
-//                     }
-//                     );
-//                 });
-//             });
+             
+             $.get(url,
+                function(data) {
+                 $("#prod" + xProductId).html(data);
+             });
       }
        </script>
 </head>
